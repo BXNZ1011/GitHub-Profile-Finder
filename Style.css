@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    transition:.3s;
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    animation:fadeIn .8s ease;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    transform:scale(1.05);
+}
+
+.profile img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+.profile h2{
+    margin-bottom:10px;
+}
+
+.profile p{
+    opacity:.9;
+    margin-bottom:20px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:25px;
+}
+
+.stats div{
+    display:flex;
+    flex-direction:column;
+}
+
+.stats strong{
+    font-size:22px;
+}
+
+#profile-link{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+#profile-link:hover{
+    transform:translateY(-3px);
+}
+
+.hidden{
+    display:none;
+}
+
+#error{
+    color:#ffb4b4;
+    margin-top:15px;
+}
+
+#loading{
+    font-size:18px;
+    margin:20px 0;
+}
+
+#theme-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background:white;
+}
+
+body.light{
+    background:#f3f4f6;
+}
+
+body.light .container{
+    background:white;
+    color:#111;
+}
+
+body.light #profile-link{
+    color:white;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+  }
