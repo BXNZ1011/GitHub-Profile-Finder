@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button id="theme-btn">🌙</button>
+
+<div class="container">
+
+    <h1>GitHub Profile Finder</h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="search"
+            placeholder="Enter GitHub username...">
+        <button id="search-btn">
+            Search
+        </button>
+    </div>
+
+    <div id="loading" class="hidden">
+        Loading...
+    </div>
+
+    <div id="error" class="hidden">
+        User not found.
+    </div>
+
+    <div id="profile" class="profile hidden">
+
+        <img id="avatar" src="" alt="Avatar">
+
+        <h2 id="name"></h2>
+
+        <p id="bio"></p>
+
+        <div class="stats">
+
+            <div>
+                <strong id="repos">0</strong>
+                <span>Repos</span>
+            </div>
+
+            <div>
+                <strong id="followers">0</strong>
+                <span>Followers</span>
+            </div>
+
+            <div>
+                <strong id="following">0</strong>
+                <span>Following</span>
+            </div>
+
+        </div>
+
+        <a id="profile-link" target="_blank">
+            View GitHub Profile
+        </a>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
